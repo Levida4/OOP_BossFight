@@ -32,3 +32,17 @@ protected:
             leben = leben - schaden;
         }
 };
+
+class Krieger : public Charakter{
+    public:
+    void lebenabZiehen (){
+        leben = leben - (schaden + 10);
+    }
+};
+
+class Boss : public Charakter{
+    public:
+    void lebenabZiehen(){
+        leben = leben - (schaden + 5);
+    }
+};
