@@ -64,7 +64,19 @@ boss1->setLeben(200);
 
 cout << krieger1->getName() + " & " + krieger2->getName() + " VS " + boss1->getName() << endl;
 
+while (krieger1->getLeben() > 0 && krieger2->getLeben() >0 && boss1->getLeben() > 0) {
+	krieger1->lebenabZiehen();
+	boss1->lebenabZiehen();
+	krieger2->lebenabZiehen();
+	cout << "BarbLeben: " << krieger1->getLeben() << " | " " AssaLeben: " << krieger2->getLeben() << " | " " BossLeben: " << boss1->getLeben() << endl;
+}
 
+if (krieger1->getLeben() > 0 && krieger2->getLeben() > 0 ) {
+	cout << "DAS LICHT HAT GESIEGT" << endl;
+	}
+else {
+	cout << "DAS BOESE HAT GESIEGT" << endl;
+}
 
 
 
