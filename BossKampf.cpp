@@ -46,3 +46,27 @@ class Boss : public Charakter{
         leben = leben - (schaden + 5);
     }
 };
+
+int main(){
+
+Krieger* krieger2 = new Krieger();
+Krieger* krieger1 = new Krieger();
+Boss* boss1 = new Boss();
+
+krieger2->setName("Assa");
+krieger2->setLeben(160);
+
+krieger1->setName("Barb");
+krieger1->setLeben(200);
+
+boss1->setName("Izual");
+boss1->setLeben(200);
+
+cout << krieger1->getName() + " & " + krieger2->getName() + " VS " + boss1->getName() << endl;
+
+
+
+
+
+
+}
